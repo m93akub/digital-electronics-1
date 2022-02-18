@@ -5,7 +5,7 @@
 1. Equations of all three versions of logic function f(c,b,a):
 
  \begin{align*}
-    f(c,b,a)_{\textup{ORG}} =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
+    <img src="https://render.githubusercontent.com/render/math?math=f(c,b,a)_{\textup{ORG}} =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\>
     f(c,b,a)_{\textup{NAND}} =&~ \overline{\overline{\overline{b}a} \cdot \overline{\overline{c}\overline{b}}}\\
     f(c,b,a)_{\textup{NOR}} =&~ \overline{\overline{a+\overline{c}}+\overline{b}}\\
 \end{align*}

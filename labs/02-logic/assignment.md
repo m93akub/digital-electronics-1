@@ -4,12 +4,15 @@
 
 1. Karnaugh maps for other two functions:
    Greater than:
+   
  ![greater](https://user-images.githubusercontent.com/99811894/156231096-916cad29-a90d-4e08-b56c-cc3b71d8a467.png)
  
    Less than:
+   
 ![less](https://user-images.githubusercontent.com/99811894/156231057-87744138-11bf-41d0-a723-636527679322.png)
  
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
+
 ![eqations](https://user-images.githubusercontent.com/99811894/156231266-74b04c44-b50c-4f0b-95cf-fbfeffe58d37.svg)
 
 ### 4-bit comparator
@@ -72,4 +75,4 @@
 
 3. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   https://www.edaplayground.com/x/ZZRB

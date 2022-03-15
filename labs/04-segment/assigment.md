@@ -96,7 +96,8 @@
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
    
-   
+   ![image](https://user-images.githubusercontent.com/99811894/158456571-b7614cc9-dc42-463b-a41e-e6757421c0c1.png)
+
 
 ### LED(7:4) indicators
 

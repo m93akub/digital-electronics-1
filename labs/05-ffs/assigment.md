@@ -1,35 +1,42 @@
-## Preparation tasks (done before the lab at home)
+# Lab 5: Michal Kubant
 
-1. Write characteristic equations and complete truth tables for D, JK, T flip-flops where `q(n)` represents main output value before the clock edge and `q(n+1)` represents output value after the clock edge.
+### Flip-flops
 
-![image](https://user-images.githubusercontent.com/99811894/158454787-a52ed962-4545-40a9-97ce-e9fd83b9aa24.png)
+1. Listing of VHDL architecture for T-type flip-flop. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   **D-type FF**
-   | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | R | 0 | 0 | 0 | `q(n+1)` has the same level as `d` and `q(n)`|
-   | R | 0 | 1 | 0 | `q(n+1)` has the same level as `d` and invert `q(n)`|
-   | R | 1 | 0 | 1 | `q(n+1)` has the same level as `d` and invert `q(n)`|
-   | R | 1 | 1 | 1 | `q(n+1)` has the same level as `d` and `q(n)` |
+```vhdl
+architecture Behavioral of t_ff_rst is
+    signal s_q : std_logic;
+begin
+    p_t_ff_rst : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (rst = '1')then
+                s_q <= '0';
+            else
+                if (t = '0') then
+                    s_q <= s_q;
+                else
+                    s_q <= not t;        
+                end if;               
+            end if;
+       end if;
 
-   **JK-type FF**
-   | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-: | :-- |
-   | R | 0 | 0 | 0 | 0 | Output did not change |
-   | R | 0 | 0 | 1 | 1 | Output did not change |
-   | R | 0 | 1 | 0 | 0 | reset |
-   | R | 0 | 1 | 1 | 0 | reset |
-   | R | 1 | 0 | 0 | 1 | set |
-   | R | 1 | 0 | 1 | 1 | set |
-   | R | 1 | 1 | 0 | 1 | toggle |
-   | R | 1 | 1 | 1 | 0 | toggle |
+    end process p_t_ff_rst;
 
-   **T-type FF**
-   | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | R | 0 | 0 | 0 | Output did not change |
-   | R | 0 | 1 | 1| not change |
-   | R | 1 | 0| 1| invert (toggle) |
-   | R | 1 | 1| 0| invert (toggle) |
+    q     <= s_q;
+    q_bar <= not s_q;
+end architecture Behavioral;
+```
 
-<a name="part1"></a>
+2. Screenshot with simulated time waveforms. Try to simulate both flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+
+   
+
+### Shift register
+
+1. Image of the shift register `top` level schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
+
+
+   
+

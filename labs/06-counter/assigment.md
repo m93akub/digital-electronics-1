@@ -11,7 +11,7 @@ The Nexys A7 board provides five push buttons for user applications.
 
 ![image](https://user-images.githubusercontent.com/99811894/159712062-fdba540f-2b2b-48f2-8429-e9c0d9eb804e.png)
 
-not pressed = LOW
+not pressed = LOW, 
 pressed = HIGH
 
 2. Calculate how many periods of clock signal with frequency of 100&nbsp;MHz contain time intervals 2&nbsp;ms, 4&nbsp;ms, 10&nbsp;ms, 250&nbsp;ms, 500&nbsp;ms, and 1&nbsp;s. Write values in decimal, binary, and hexadecimal forms.

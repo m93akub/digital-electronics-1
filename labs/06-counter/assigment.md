@@ -2,11 +2,17 @@
 
 The Nexys A7 board provides five push buttons for user applications.
 
-- jsou připojeny k rezistoru, aby nedošlo k poškození neúmyslným zkratem, může dojít ke zkratu, pokud by byl pin tlačítka omylem nadefinován jako výstup
-- push buttons generují LOW výstup, když jsou v "rest" modu (nejsou stisknuty), pokud jsou stisknuty, tak jsou ve stavu HIGH
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. See [schematic](https://github.com/tomas-fryza/digital-electronics-1/blob/master/docs/nexys-a7-sch.pdf) or [reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board and find out the connection of these push buttons, ie to which FPGA pins are connected and how. What logic/voltage value do the buttons generate when not pressed and what value when the buttons are pressed? Draw the schematic with push buttons.
+
+![deskabuttons](https://user-images.githubusercontent.com/99811894/159712104-c223b7f7-01e9-4bd4-8ce3-530bf4938910.png)
+
+
+![image](https://user-images.githubusercontent.com/99811894/159712062-fdba540f-2b2b-48f2-8429-e9c0d9eb804e.png)
+
+not pressed = LOW
+pressed = HIGH
 
 2. Calculate how many periods of clock signal with frequency of 100&nbsp;MHz contain time intervals 2&nbsp;ms, 4&nbsp;ms, 10&nbsp;ms, 250&nbsp;ms, 500&nbsp;ms, and 1&nbsp;s. Write values in decimal, binary, and hexadecimal forms.
 

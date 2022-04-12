@@ -86,3 +86,4 @@
 ### Smart controller
 
 1. State table for smart controller using two sensors and two traffic lights in three colors.
+![image](https://user-images.githubusercontent.com/99811894/163056108-027657dc-ff09-4c5f-a9db-3cf684ad156f.png)
